@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+<session-factory>
+
+<!-- parameters for ORACLE
+	<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+	<property name="hibernate.connection.password">adsaat1234</property>
+	<property name="hibernate.connection.url">jdbc:oracle:thin:@10.1.5.10:1522:GAMAT</property>
+	<property name="hibernate.connection.username">adsaat</property>
+	<property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+  -->
+
+
+<!--   parameters for HSQLDB
+  -->
+	<property name="hibernate.connection.driver_class">org.hsqldb.jdbc.JDBCDriver</property>
+	<property name="hibernate.connection.password"></property>
+	<property name="hibernate.connection.url">jdbc:hsqldb:hsql://localhost:9006/NCA2</property>
+	<property name="hibernate.connection.username">SA</property>
+	<property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
+
+<!-- parameters for PostGreSQL DEV Database
+	<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+	<property name="hibernate.connection.url">jdbc:postgresql://nca.cl96sshpc7ab.us-east-1.rds.amazonaws.com:5432/OSKAR</property>
+	<property name="hibernate.connection.username">OSKAR</property>
+	<property name="hibernate.connection.password">nd30mrt18de</property>
+	<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
+  -->
+
+<!-- parameters for MYSQL
+	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="hibernate.connection.password">*****</property>
+	<property name="hibernate.connection.url">jdbc:mysql://dbhostname:3306/GAMADB</property>
+	<property name="hibernate.connection.username">GAMADB</property>
+	<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  -->
+
+
+<!-- parameters for PostGreSQL
+	<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+	<property name="hibernate.connection.password">Nauti8138</property>
+	<property name="hibernate.connection.url">jdbc:postgresql://ncs.cl96sshpc7ab.us-east-1.rds.amazonaws.com:5432/NCS</property>
+	<property name="hibernate.connection.username">NAUT</property>
+	<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
+  -->
+
+	<property name="hibernate.search.autoregister_listeners">true</property>
+	<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+	<property name="hibernate.validator.apply_to_ddl">false</property>
+        
+        
+</session-factory>
+
+</hibernate-configuration>
